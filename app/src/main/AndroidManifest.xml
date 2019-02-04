@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.andromob.hdwallpapers">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.andromob.hdwallpapers.Item_Wallpaper_Detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/WallPaperStuffTheme" />
+        <activity
+            android:name="com.andromob.hdwallpapers.Activity_Description"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.andromob.hdwallpapers.Item_Wallpaper_Preview"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_wall_preview"
+            android:parentActivityName="com.andromob.hdwallpapers.Item_Wallpaper_Detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/WallPreviewTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.andromob.hdwallpapers.Item_Wallpaper_Detail" />
+        </activity>
+        <activity
+            android:name="com.andromob.hdwallpapers.Activity_Splash_Screen"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.andromob.hdwallpapers.MainActivity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+    </application>
+
+</manifest>

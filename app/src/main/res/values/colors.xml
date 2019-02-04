@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e41b1b</color>
+    <color name="colorPrimarymiddle">#c91418 </color>
+    <color name="colorPrimaryDark">#ac0f0f</color>
+    <color name="colorAccent">#ff4059</color>
+    <color name="colorTextView">#964d5854</color>
+    <color name="colorDivider">#70607D8B</color>
+    <color name="colorText1">#3C3C3C</color>
+    <color name="colorText2">#747474</color>
+
+    <color name="colorWhite">#FFFFFFFF</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="share_round">#b43398e6</color>
+
+</resources>
